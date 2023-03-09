@@ -33,7 +33,7 @@ function calcular(){
         i_discreto=( (p_continuo.value*ts.value) / (Ti) );
         d_discreto=( (p_continuo.value*Td) / (ts.value) );;
 
-        r.innerHTML="Los parámetros calculados para el controlador PID discreto son: "+"<br/>"+"P= "+ p_discreto.toFixed(2) + "<br/>"+"  I= "+ i_discreto.toFixed(2) + "<br/>"+"  D= "+ d_discreto.toFixed(2) + "<br/>"+"Para un tiempo de muestreo de "+ "s= "+ (-ro).toFixed(2) + " ± " +(Math.sqrt(1- ro*ro)).toFixed(2) +" j "  ; 
+        r.innerHTML="Los parámetros calculados para el controlador PID discreto son: "+"<br/>"+"P= "+ p_discreto.toFixed(2) + "<br/>"+"  I= "+ i_discreto.toFixed(2) + "<br/>"+"  D= "+ d_discreto.toFixed(2) + "<br/>"+"Para un tiempo de muestreo de "+ ts.value +" Segundos" ; 
 
     }
     else
