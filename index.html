@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISCRETIZACION PID</title>
+    <link type="text/css" rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <header>
+        <ul class="tabla__header">
+            <li>
+                <figure >
+                    <img class="imagen" src="./UPTC.png" alt="Logo UPTC">
+                </figure>
+            </li>
+            <li>
+            </li>                 
+        </ul>    
+    </header>
+    <section> 
+        <ul> 
+            <li class="principal"> <h1 >DISCRETIZACIÓN PID</h1></li>
+        </ul>
+        <ul >
+            <li>
+                <p class="texto_instrucciones">Ingrese los parametros del controlador PID continuo</p>    
+            </li>
+        </ul>
+        <ul class="l">        
+            <li>       
+                <p class="p__texto_sis" >Ingrese P
+                    <input class="text" type="number" id="input_p" value="1" required />
+                </p>
+            </li>
+            <li>       
+                <p class="p__texto_sis" >Ingrese I
+                    <input class="text" type="number" id="input_i" value="1" required/>
+                </p>
+            </li>
+            <li>       
+                <p class="p__texto_sis" >Ingrese D
+                    <input class="text" type="number" id="input_d" value="1" required/>
+                </p>
+            </li>
+        </ul>  
+        <ul style="list-style: none;">
+            <li style="margin-left: 25vw; margin-right: 25vw;">       
+                <p class="p__texto_sis" >Ingrese el tiempo de muestreo
+                    <input class="text" type="number" id="input_ts" value="1" required/>
+                </p>
+            </li>
+        </ul>
+
+        <ul style="justify-content: center;">        
+            <li style= "justify-content: center;">
+                <p style="justify-content: center;">
+                    <input class="boton" type="submit" id="boton" value="Calcular"/>
+                </p>
+            </li>      
+            <li style="text-align:-webkit-center ;">
+                <p class="res" id="resultado"></p>    
+            </li>
+
+        </ul>
+        <ul style="justify-content: center;">       
+            <li></li> 
+            <li style= "justify-content: center;">
+                <p style="justify-content: center;">
+                    <input class="boton" type="submit" id="botonayuda" value="Ayuda"/>
+                </p>
+            </li>      
+            <li style="text-align:-webkit-center ;">
+                <p class="res3" id="ayuda"></p>    
+            </li>
+
+        </ul>
+    </section>
+    <script src="./PID_DISC.js"></script>
+    <footer class="footer">
+        <ul>
+            <li style="text-align:center ;">
+                Autores:
+            </li>
+            <li>
+                Oscar Humberto Sierra Herrera(1)(2)
+            </li>
+            <li>
+                Mario Eduardo Gonzalez Niño(2)(3)
+            </li>
+            <li>
+                Luis David Patarroyo (3)
+            </li>
+            <li style="text-align:center ;">
+                (1)Grupo de investigación I2E
+            </li>
+            <li style="text-align:center ;">
+                (2)Grupo de investigación DSP
+            </li>
+            <li style="text-align:center ;">
+                (3)Grupo de investigación I2E
+            </li>
+            <li style="text-align:center">
+                2023
+            </li>
+        </ul>
+
+    </footer>
+
+
+</body>
+</html>
